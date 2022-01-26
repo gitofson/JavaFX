@@ -4,14 +4,15 @@ package cz.spsmb.w21;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
-import java.awt.*;
 import java.util.List;
 import java.util.Map;
 
 // Předávání parametrů z příkazové řádky do aplikace - 3 druhy parametrů:
 // pojmenované (named)     Map<String, String> gatNamed()
+// pojmenujeme pomocí --jmeno=hodnota
 // nepojmenované (unnamed) List<String> getUnnamed()
 // syrové (raw)            List<String> getRaw()
 public class FXParamApp extends Application {
@@ -32,7 +33,7 @@ public class FXParamApp extends Application {
                 "Raw parameters: " + rawParameters;
 
         TextArea ta = new TextArea(paramStr);
-        Group root = new Group();
+        Group root = new Group(ta);
         stage.setScene(new Scene(root));
         stage.setTitle("Parametry (argumenty) aplikace");
         stage.show();
