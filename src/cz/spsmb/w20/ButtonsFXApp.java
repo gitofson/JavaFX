@@ -1,4 +1,4 @@
-package cz.spsmb;
+package cz.spsmb.w20;
 
 import javafx.application.Application;
 import javafx.application.Platform;

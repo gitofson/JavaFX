@@ -1,4 +1,4 @@
-package cz.spsmb;
+package cz.spsmb.w20;
 
 public class Main {
 
