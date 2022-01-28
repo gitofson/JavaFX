@@ -1,4 +1,4 @@
-package cz.spsmb.w21;
+package cz.spsmb.w21.bindings;
 
 import javafx.beans.binding.NumberBinding;
 import javafx.beans.property.IntegerProperty;
@@ -10,7 +10,7 @@ import javafx.beans.property.SimpleIntegerProperty;
 // eager binding - přepočítám okamžitě, jakmile se jedna ze vstupnách hodnot změní
 // lazy (líné) binding - přepočítám v okamžiku, kdy výslednou hodnotu požaduji. Do té doby
 // se po změně vstupu vygeneruje událost zneplatnění
-public class BindingTest {
+public class ABindingTest {
     public static void main(String[] args) {
         IntegerProperty x = new SimpleIntegerProperty(100);
         IntegerProperty y = new SimpleIntegerProperty(200);

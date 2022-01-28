@@ -1,9 +1,18 @@
-package cz.spsmb.w21;
+package cz.spsmb.w21.bindings;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
-
-public class BoundProperty {
+// Rozhraní NumberExpression obsahuje následující metody pro vytvoření vazby (bindování):
+// návratový typ NumberBinding:
+// add(), substract(), multiply(), divide() - vytvoření požadované vazby typu NumberExpression
+// návratový typ: BooleanBinding:
+// graterThan(), greaterThanOrEqualTo(), isEqualTo(), lessThan(), lessThanOrEqualTo()
+// návratový typ: NumberBinding:
+// negate()     - vytvoří novou třídu NumberBinding, která je negací NumberExpression
+// návratový typ: StringBinding:
+// asString()   - vytvoří vazbu typu StringBinding, která reprezentuje hodnotu typu NumberExpression
+//
+public class BBoundProperty {
     public static void main(String[] args) {
         IntegerProperty x = new SimpleIntegerProperty(10);
         IntegerProperty y = new SimpleIntegerProperty(20);

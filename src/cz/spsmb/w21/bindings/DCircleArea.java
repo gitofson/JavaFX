@@ -1,4 +1,4 @@
-package cz.spsmb.w21;
+package cz.spsmb.w21.bindings;
 
 import javafx.beans.binding.DoubleBinding;
 import javafx.beans.binding.StringExpression;
@@ -12,7 +12,7 @@ import java.util.Locale;
 //Rozhraní pro bindování je
 // -vysokoúrovňové - Fluent API a Binding class - častěji používanější pro jednoduchost
 // -nízkoúrovňové - umnožňuje vytvořit vlastní logiku pro bindování
-public class CircleArea {
+public class DCircleArea {
     public static void main(String[] args) {
         DoubleProperty r = new SimpleDoubleProperty(7);
         DoubleBinding area = r.multiply(r).multiply(Math.PI);

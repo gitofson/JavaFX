@@ -1,9 +1,9 @@
-package cz.spsmb.w21;
+package cz.spsmb.w21.bindings;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
-public class BidirectionalBinding {
+public class CBidirectionalBinding {
     public static void main(String[] args) {
         IntegerProperty x = new SimpleIntegerProperty(1);
         IntegerProperty y = new SimpleIntegerProperty(2);
