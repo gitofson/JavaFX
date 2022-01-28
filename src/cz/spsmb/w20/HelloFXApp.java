@@ -7,7 +7,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class HelloFXApp extends Application {
-    //Run -> Edit Configurations -> Alt+V (add VM Options line), Add --module-path /path/to/JavaFX/lib --add-modules=javafx.controls
+    //Run -> Edit Configurations -> Alt+V (add VM Options line), Add --module-path /opt/javafx-sdk-17.0.2/lib --add-modules=javafx.controls
     @Override
     public void start(Stage stage) throws Exception {
         Text msg = new Text("Hello JavaFX");
