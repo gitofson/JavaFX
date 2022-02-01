@@ -30,6 +30,8 @@ package cz.spsmb.w22.observable_collections;
 //    R call(P param)
 //}
 
+//V observable množinách a mapách se extraktor ani kurzor nepoužívá. Tudíž jsou tak mnohem jednodušší.
+
 import javafx.beans.Observable;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
