@@ -4,8 +4,8 @@ package cz.spsmb.w22.observable_collections;
 //Často nepotřebujeme jen zjistit, že "se něco změnilo", ale i k jaké konkrétní změně došlo. Instance třídy
 //ListChangeListener.Change, která je paramterem metody onChanged() nabízí pro tento účel následující metody:
 
-//ObservableList<E> getList()       - vrací seznam po provedených změnách. Např. list.addAll("1","2","3"); list.removeAll("1", "3" )
-//                                    představuje právě 2 změny.
+//ObservableList<E> getList()       - vrací seznam po provedených změnách. Např. 2 příkazy list.addAll("1","2","3"); list.removeAll("1", "3" )
+//                                    představují právě 2 změny.
 //boolean next()                    - pohyb kurzoru. Každý stav reoprezentuje jednu změnu.
 //boolean reset()
 //boolean wasAdded()                - sděluje k jaké změně došlo.
@@ -22,6 +22,14 @@ package cz.spsmb.w22.observable_collections;
 //int getPermutation(int oldIndex)  - vrací nový index prvku po přemístění. Např. pokud se prvek z pozice 2 přemístil na
 //                                    pozici 5, getPermutation(2) vrátí 5.
 
+// Pro detekci aktualizace prvku v Seznamu je potřeba použít jednoho z těchto inicializátorů observable seznamů:
+// <E> ObservableList<E> ObservableArrayList(Callback<E, Observable[]> extractor)
+// <E> ObservableList<E> ObservableList(List<E> list, Callback<E, Observable[]> extractor)
+// kde rozhraní Callback<P, R> je deklarováno tako:
+//public interface Callback<P, R> {
+//    R call(P param)
+//}
+
 import javafx.beans.Observable;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -35,7 +43,7 @@ import java.util.List;
 public class BListUdateTest {
     public static void main(String[] args) {
         //Vytvoření extraktoru pro IntegerProperty. Bez tohoto není možné dostat událost o změně prvku. Pole totiž musí
-        //být typu observable
+        //být typu Observable[]
         Callback<IntegerProperty, Observable[]> extractor = new Callback<IntegerProperty, Observable[]>() {
             @Override
             public Observable[] call(IntegerProperty p) {
