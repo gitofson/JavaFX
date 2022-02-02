@@ -3,7 +3,7 @@ package cz.spsmb.w21.properties;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.value.ObservableValue;
-// Vlastnosti dávají možnost zaregistraovat třídu ChangeListener k přijímání událostí změn. Změna vlastnosti je spuštěna
+// Vlastnosti dávají možnost zaregistrovat třídu ChangeListener k přijímání událostí změn. Změna vlastnosti je spuštěna
 // vždy, když se hodnota vlastnosti změní. Metoda changed() dostává 3 hodnoty: referenci na vlastnost objektu,
 // starou hodnotu a novou hodnotu.
 public class AChangeTest {

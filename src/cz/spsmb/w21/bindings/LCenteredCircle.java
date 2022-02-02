@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
-
+// add --module-path "Y:\stemberk\verejne_zaci\javafx-sdk-17.0.1\lib" --add-modules javafx.controls,javafx.fxml
 public class LCenteredCircle extends Application {
     public static void main(String[] args) {
         Application.launch(args);

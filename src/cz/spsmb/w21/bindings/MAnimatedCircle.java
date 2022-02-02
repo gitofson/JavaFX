@@ -15,7 +15,7 @@ import javafx.scene.Scene;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-
+//add --module-path "Y:\stemberk\verejne_zaci\javafx-sdk-17.0.1\lib" --add-modules javafx.controls,javafx.fxml
 public class MAnimatedCircle extends Application {
     //DoubleProperty rad = new SimpleDoubleProperty(0);
     private Circle c = new Circle();

@@ -3,6 +3,7 @@ package cz.spsmb.w21.properties;
 import javafx.beans.Observable;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 
 public class BChangeAndInvalidationTest {
@@ -10,6 +11,7 @@ public class BChangeAndInvalidationTest {
         IntegerProperty counter = new SimpleIntegerProperty(100);
 
         // Add an invalidation listener to the counter property
+
         counter.addListener(BChangeAndInvalidationTest::invalidated);
 
         // Add a change listener to the counter property
