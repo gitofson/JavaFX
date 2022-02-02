@@ -17,7 +17,8 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 //add --module-path "Y:\stemberk\verejne_zaci\javafx-sdk-17.0.1\lib" --add-modules javafx.controls,javafx.fxml
 public class MAnimatedCircle extends Application {
-    //DoubleProperty rad = new SimpleDoubleProperty(0);
+    DoubleProperty rad = new SimpleDoubleProperty(0);
+    private int drad = 1;
     private Circle c = new Circle();
     private Scene scene;
     private double coef = + 1.0;
@@ -71,7 +72,7 @@ public class MAnimatedCircle extends Application {
         //Vytvoření vazby centerX, centerY a poloměru kruhu c na šířku a výšku scény
         this.c.centerXProperty().bind(this.scene.widthProperty().divide(2));
         this.c.centerYProperty().bind(this.scene.heightProperty().divide(2));
-        //c.radiusProperty().bind(this.rad);
+        c.radiusProperty().bind(this.rad);
         //c.radiusProperty().bind(Bindings.min(scene.heightProperty().divide(2), scene.widthProperty().divide(2)));
         //nastavení vlastností stage
         stage.setTitle("Bindings in JavaFX");
@@ -82,7 +83,14 @@ public class MAnimatedCircle extends Application {
     }
 
     public void animationHandler(ActionEvent e){
-
+        if(this.rad.get() > Math.min(this.scene.getHeight()/2, this.scene.getWidth()/2)){
+            this.drad = -1;
+        }
+        if(this.rad.get() < 0){
+            this.drad = 1;
+        }
+        this.rad.set(this.rad.get() + this.drad);
+        /*
         if(this.c.radiusProperty().get() > Math.min(
                 this.scene.heightProperty().get()/2, this.scene.widthProperty().get()/2)){
             this.coef = - 1.0;
@@ -90,5 +98,7 @@ public class MAnimatedCircle extends Application {
             this.coef = 1.0;
         }
            this.c.radiusProperty().set(this.c.radiusProperty().get() + coef);
+
+         */
     }
 }
