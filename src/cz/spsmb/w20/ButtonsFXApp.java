@@ -11,7 +11,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-
+//run: VMOPtions: --module-path "\path\to\javafx-sdk-17\lib" --add-modules javafx.controls,javafx.fxml
 public class ButtonsFXApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {
