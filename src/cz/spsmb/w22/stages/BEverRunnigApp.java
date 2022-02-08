@@ -1,6 +1,7 @@
 package cz.spsmb.w22.stages;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.stage.Stage;
 
 public class BEverRunnigApp extends Application {
@@ -11,5 +12,6 @@ public class BEverRunnigApp extends Application {
     @Override
     public void start(Stage stage) {
         // Do not write any code here
+        //Platform.exit(); //Opuštění aplikace
     }
 }
