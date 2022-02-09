@@ -71,6 +71,7 @@ public class FStageModalityApp extends Application {
         Scene scene = new Scene(root, 200, 100);
         stage.setScene(scene);
         stage.setTitle("A Dialog Box");
+        stage.initStyle(javafx.stage.StageStyle.UNDECORATED);
         stage.show();
     }
 }

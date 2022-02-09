@@ -1,6 +1,7 @@
 package cz.spsmb.w22.stages;
 
 import javafx.application.Application;
+import javafx.beans.property.BooleanProperty;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Rectangle2D;
@@ -19,6 +20,10 @@ public class GMaximizedStage extends Application {
     @Override
     public void start(Stage stage) {
         Button button = new Button("full screen");
+        //Binduji visibilitu tlačítka podle fullscreen stavu
+        BooleanProperty bp = button.visibleProperty();
+        bp.bind(stage.fullScreenProperty().not());
+
         button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
