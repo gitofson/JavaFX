@@ -6,7 +6,9 @@ import javafx.collections.ObservableList;
 import javafx.geometry.Rectangle2D;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
-
+// Výpis informací o monitoru, hlavní monitor "primary screen", ostatní se nazývají
+// nonprimary screen.
+// getDpi()     - vrátí rozlišení monitoru.
 public class AScreenDetailsApp extends Application {
 
     public static void main(String[] args) {

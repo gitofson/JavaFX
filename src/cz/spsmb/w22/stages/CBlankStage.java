@@ -15,7 +15,7 @@ public class CBlankStage extends Application {
 
     @Override
     public void start(Stage stage) {
-        int m = 5;
+        int m = 1;
         Scene scene;
         Group root;
         switch(m){
@@ -27,6 +27,7 @@ public class CBlankStage extends Application {
             case 2:
                 stage.setTitle("Stage with a Button in the Scene");
                 scene = new Scene(new Group(new Button("Hello")));
+                //scene = new Scene(new Button("Hello"));
                 stage.setScene(scene);
                 break;
             case 3:

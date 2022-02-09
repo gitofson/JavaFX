@@ -42,11 +42,11 @@ public class DStyleStageApp extends Application {
         stage.setTitle("The Style of a Stage");
 
         /* Uncomment one of the following statements at a time */
-        this.show(stage, styleLabel, DECORATED);
+        //this.show(stage, styleLabel, DECORATED);
         //this.show(stage, styleLabel, UNDECORATED);
         //this.show(stage, styleLabel, TRANSPARENT);
         //this.show(stage, styleLabel, UNIFIED);
-        //this.show(stage, styleLabel, UTILITY);
+        this.show(stage, styleLabel, UTILITY);
     }
 
     private void show(Stage stage, Label styleLabel, StageStyle style) {
@@ -63,7 +63,7 @@ public class DStyleStageApp extends Application {
             stage.getScene().getRoot().setStyle(
                     "-fx-background-color: transparent");
         } else if(style == UNIFIED) {
-            stage.getScene().setFill(Color.TRANSPARENT);
+            //stage.getScene().setFill(Color.TRANSPARENT);
         }
 
         // Show the stage

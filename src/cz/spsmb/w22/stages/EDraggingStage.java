@@ -52,6 +52,7 @@ public class EDraggingStage extends Application {
 
     protected void handleMouseDragged(MouseEvent e) {
         // Move the stage by the drag amount
+        System.out.format("x:%f, y:%f%n", e.getScreenX() - this.dragOffsetX, e.getScreenY() - this.dragOffsetY );
         stage.setX(e.getScreenX() - this.dragOffsetX);
         stage.setY(e.getScreenY() - this.dragOffsetY);
     }
