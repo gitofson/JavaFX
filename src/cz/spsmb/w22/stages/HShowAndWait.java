@@ -1,10 +1,14 @@
 package cz.spsmb.w22.stages;
 
 import javafx.application.Application;
+import javafx.scene.Cursor;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
+import java.net.URL;
+
 // Často je potřeba použít tzv. dialog okno a pozastavit činnost programu, dokud není dialog zavřen. Např. dialog
 // typu yes/no. JavaFX narozdíl od Swing neposkytuje přímo dialog okno.
 // Metoda stage.showAndWait() slouží přesně k tomuto účelu.
@@ -52,7 +56,10 @@ public class HShowAndWait extends Application {
 
         // Show the stage and wait for it to close
         stage.showAndWait();
-
+        //stage.show();
+        //URL url = getClass().getClassLoader().getResource("C:\\Users\\stemberk\\IdeaProjects\\JavaFX\\cur.png");
+        //Cursor myCur = Cursor.cursor(url.toExternalForm());
+        //scene.setCursor(myCur);
         System.out.println("After stage.showAndWait(): " + stageNumber);
     }
 }
