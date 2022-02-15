@@ -17,8 +17,9 @@ import javafx.stage.Stage;
 
 // Uzly mají vlastnost typu BooleanProperty managed. Pokud je uzel managed (a to jsou ve výchozím stavu všechny uzly),
 // rodičovský uzel přebírá správu nad těmito uzly co se týká umístění a velikosi.
-// V následujícím příkladě je uvedený unmanaged uzel typu Text, který zde slouží jako nápověda uživateli. Zobrazuje se
-// dle práve "focused" TextField.
+// V následujícím příkladě je uvedený unmanaged uzel typu Text, který zde slouží jako mini nápověda uživateli. Zobrazuje se
+// dle práve "focused" TextField. Kontejner instance třídy Text, v tomto případě instance třídy GridPane totiž v případě
+// unmanaged uzlu s jeho layoutBounds vůbec nepočítá.
 public class HMicroHelpApp extends Application {
     // An instance variable to store the Text node reference
     private Text helpText = new Text();
