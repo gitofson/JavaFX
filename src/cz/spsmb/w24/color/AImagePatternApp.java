@@ -9,7 +9,8 @@ import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
-import java.net.URL;
+// Image pattern umožňuje vyplnit plochu nějakého tvaruu obrázkem. Buď může být celý tvar vyplněn, nebo se použije
+// dlaždicová výplň. Ta se použije v případě, že  vyplňovaná plocha je větší, než velikost zvolené výplně.
 
 public class AImagePatternApp extends Application {
     private Image img;
@@ -23,8 +24,8 @@ public class AImagePatternApp extends Application {
         // Create an Image object
         //final String IMAGE_PATH = "src/resources/picture/blue_rounded_rectangle.png";
         //URL url = this.getClass().getClassLoader().getResource("picture/blue_rounded_rectangle.png");
-        //final String IMAGE_PATH = "picture/blue_rounded_rectangle.png";
-        final String IMAGE_PATH = "picture/cursor_PNG95.png";
+        final String IMAGE_PATH = "picture/blue_rounded_rectangle.png";
+        //final String IMAGE_PATH = "picture/cursor_PNG95.png";
         //final String IMAGE_PATH = "picture/rainbow.cur";
         //img = new Image(url.toExternalForm());
         img = new Image(IMAGE_PATH);
@@ -34,6 +35,7 @@ public class AImagePatternApp extends Application {
     public void start(Stage stage) {
         // An anchor rectangle at (0, 0) that is 25% wide and 25% tall
         // relative to the rectangle to be filled
+        // double x, double y, double width, double height, boolean proportional
         ImagePattern p1 = new ImagePattern(img, 0, 0, 0.25, 0.25, true);
         Rectangle r1 = new Rectangle(100, 50);
         r1.setFill(p1);
