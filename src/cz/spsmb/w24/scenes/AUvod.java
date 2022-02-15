@@ -34,5 +34,30 @@ package cz.spsmb.w24.scenes;
 //ReadOnlyDoubleProperty            x           definuje horizontální pozici scény v okně
 //ReadOnlyDoubleProperty            y           definuje vertikální pozici scény v okně
 
-public class AUvod {
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
+import javafx.stage.Stage;
+
+import java.io.FileInputStream;
+import java.net.URL;
+
+public class AUvod extends Application {
+    @Override
+    public void start(Stage stage) throws Exception {
+        //URL url = this.getClass().getClassLoader().getResource("picture/node_tree.png");
+        //Image image = new Image("/home/ste/IdeaProjects/JavaFX/src/resources/picture/node_tree.png");
+        //Image image = new Image(url.toExternalForm());
+        FileInputStream fis = new FileInputStream("src/resources/picture/node_tree.png");
+        Image image = new Image(fis);
+        fis.close();
+        ImageView imageView = new ImageView(image);
+        HBox root = new HBox(imageView);
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }

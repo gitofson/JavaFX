@@ -40,6 +40,7 @@ public class ALayoutBoundsTest extends Application {
                 break;
             case 2:
                 //uzly s efekty uzavřu do Groupy. LayoutBounds Groupy je totiž sjednocením boundsInParent pro všechny její děti.
+                //Pokud tedy chceme pro uzly dostatek místa pro zobrazení efektů a transformací, uzavřeme je do Groupy.
                 root.getChildren().addAll(new Group(b1), b2, new Group(b3), b4);
                 break;
         }
