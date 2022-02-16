@@ -54,7 +54,7 @@ public class BSetCursor extends Application {
             }
         });
 
-        scene.setCursor(Cursor.CROSSHAIR);
+        scene.setCursor(Cursor.W_RESIZE);
         stage.setScene(scene);
         stage.show();
     }

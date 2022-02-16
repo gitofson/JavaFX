@@ -20,7 +20,7 @@ public class DResizableNodeTest extends Application {
     @Override
     public void start(Stage stage) {
         Button btn = new Button("A big button");
-        Rectangle rect = new Rectangle(100, 50);
+        Rectangle rect = new Rectangle(200, 50);
         rect.setFill(Color.WHITE);
         rect.setStrokeWidth(1);
         rect.setStroke(Color.BLACK);

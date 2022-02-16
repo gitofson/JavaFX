@@ -21,7 +21,7 @@ public class ALayoutBoundsTest extends Application {
 
     @Override
     public void start(Stage stage) {
-        int mode = 2;
+        int mode = 1;
         Button b1 = new Button("Close");
         b1.setEffect(new DropShadow());
 

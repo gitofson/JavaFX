@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-//resizable uzlúm můžeme specifikovat 3 typy velikostí:
+//resizable uzlům můžeme specifikovat 3 typy velikostí:
 // preferovanou (preffered size) - ideální šířka a výška pro zobrazení obsahu. Např. tlačítko by mělo mít preferovanou velikost
 //                                 takovou, aby bez problémů zobrazilo požadovaný obsah
 // minimální (minimum size)      - nejmenší možná výška a šířka, kterou by daný uzel mohl mít
@@ -25,7 +25,7 @@ public class ENodeSizeSentinelValues extends Application {
         Button okBtn = new Button("OK");
         Button cancelBtn = new Button("Cancel");
         Button closeButton = new Button("Close");
-        int mode = 2;
+        int mode = 1;
         switch (mode){
             case 1:
                 //všechny 3 hodnoty nastaveny na 50. closeButton se tak stává horizontálně nonresizable
@@ -41,6 +41,7 @@ public class ENodeSizeSentinelValues extends Application {
         }
         // Override the intrinsic width of the cancel button
         cancelBtn.setPrefWidth(100);
+        cancelBtn.setPrefHeight(80);
 
         VBox root = new VBox();
         root.getChildren().addAll(okBtn, cancelBtn, closeButton);

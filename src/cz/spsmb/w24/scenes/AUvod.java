@@ -10,7 +10,7 @@ package cz.spsmb.w24.scenes;
 // je dána velikostí scény.
 // Třída Group nemůže měnit velikost a může být zvolena pro scénu  jako kořenová. Potom je obsah grafu scény ořezán na velikost
 // scény.
-// Abstraktní třída Parent je základdní třídou pro všechny uzly typu větev. Tyto třídy (potomci) se často používají:
+// Abstraktní třída Parent je základní třídou pro všechny uzly typu větev. Tyto třídy (potomci) se často používají:
 // Group
 // Pane
 // HBox

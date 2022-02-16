@@ -25,7 +25,7 @@ public class CLayoutTranslate extends Application {
         int mode = 2;
         switch(mode) {
             case 1:
-                //HBox a VBox poiužívá vlastní způsob roymístění a ignoruje tak naše nastavení metodami setLayoutX()
+                //HBox a VBox používá vlastní způsob rozmístění a ignoruje tak naše nastavení metodami setLayoutX()
                 VBox vb = new VBox();
                 vb.getChildren().addAll(b1, b2);
                 scene = new Scene(vb, 300, 300);

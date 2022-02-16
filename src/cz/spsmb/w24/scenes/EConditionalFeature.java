@@ -21,6 +21,15 @@ public class EConditionalFeature extends Application {
         } else {
             System.out.println(" dostupnost 3D vymožeností nepodporována");
         }
+        for (ConditionalFeature cf :ConditionalFeature.values()
+             ) {
+            try {
+                System.out.format("Podpora %s: %b%n", cf.toString(), Platform.isSupported(cf));
+            } catch(Exception ex) {
+                System.out.println("Exception: " + ex.getMessage());
+            }
+
+        }
 
     }
 }

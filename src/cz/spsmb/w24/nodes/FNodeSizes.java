@@ -18,7 +18,7 @@ public class FNodeSizes extends Application {
 
     @Override
     public void start(Stage stage) {
-        Button btn = new Button("Hello JavaFX!");
+        Button btn = new Button("Welcome to Jamaica and happy day - Hello JavaFX!");
 
         HBox root = new HBox();
         root.getChildren().addAll(btn);

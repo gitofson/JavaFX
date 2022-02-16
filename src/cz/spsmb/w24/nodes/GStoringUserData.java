@@ -15,6 +15,7 @@ public class GStoringUserData extends Application {
         TextField nameField = new TextField();
         ObservableMap<Object, Object> props = nameField.getProperties();
         props.put("originalData", "Advik");
+        props.put("nové informace", "Adddvik");
         printProps(nameField);
 
         //toto z nějakého důvodu nefunguje:

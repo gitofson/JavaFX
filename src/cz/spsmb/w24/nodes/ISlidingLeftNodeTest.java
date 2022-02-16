@@ -34,7 +34,7 @@ public class ISlidingLeftNodeTest extends Application {
                 .otherwise("Make Visible"));
 
         // Bind the managed property of b2 to its visible property
-        b2.managedProperty().bind(b2.visibleProperty());
+        //b2.managedProperty().bind(b2.visibleProperty());
 
         HBox root = new HBox();
         root.getChildren().addAll(visibleBtn, b1, b2, b3);
