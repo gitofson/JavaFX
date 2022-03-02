@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 // CSS poskytuje syntaxi k psaní pravidel k nastavení výsledného vizuálního vzhledu jednotlivých komponent.
 // Pravidlo se skádá ze selektoru (selector) a množiny párů vlastnost-hodnota (property-value). Např. v zde
-// použitém příkladu (resourcec/css/buttonstyles.css):
+// použitém příkladu (resources/css/buttonstyles.css):
 // .button {
 //    -fx-background-color: red;
 //    -fx-text-fill: white;

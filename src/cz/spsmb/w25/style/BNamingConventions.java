@@ -13,5 +13,23 @@ package cz.spsmb.w25.style;
 // public static void setUserAgetStylesheet(String url)
 // public static String getUserAgentStylesheet()
 
-public class BNamingConventions {
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+
+
+public class BNamingConventions extends Application {
+    @Override
+    public void start(Stage stage) throws Exception {
+        Button b1 = new Button("tlacitko");
+        VBox root = new VBox();
+        root.getChildren().addAll(b1);
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        Application.setUserAgentStylesheet(Application.STYLESHEET_CASPIAN);
+        stage.show();
+    }
 }
