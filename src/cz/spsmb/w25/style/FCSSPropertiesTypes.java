@@ -6,7 +6,7 @@ package cz.spsmb.w25.style;
 // number       - celočíselný, či reálný typ. Je zde umožněno specifikovat i jednotku - px (pixely), mm (milimetry).
 //                cm (centimetry), in (palce), pt (body), pc (picas), em, ex, nebo %.
 // angle        - totéž jako number, jen jednotky mohou být deg (stupně), nebo rad (radiány).
-// point        - reprezentován 2 čísly oddělenými mezerou. Např. 0 0, 100 0, 90, 67. Nepbo procenty, např. 2% 2%
+// point        - reprezentován 2 čísly oddělenými mezerou. Např. 0 0, 100 0, 90 67. Nepbo procenty, např. 2% 2%
 // color-stop   -
 // URI          - příklad:  .image-view { -fx-image: url("http://jdojo.com/myimage.png"); }
 // effect       - příklad:  .drop-shadow { -fx-effect: dropshadow(gaussian, gray, 10, 0.6, 10, 10); }

@@ -61,7 +61,7 @@ public class HBordersSpecification extends Application {
                 break;
             default:
                 style = "-fx-border-color: red black red black;" +
-                        "-fx-border-width: 5;" +
+                        "-fx-border-width: 15;" +
                         "-fx-border-radius: 0;" +
                         "-fx-border-insets: 0;" +
                         "-fx-border-style: solid line-join bevel line-cap round;";

@@ -8,8 +8,8 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-// Inline styly umožňují pomocí členské proměnné style (typ StringProperty) bez použití stzle sheetu definovat k danému
-// grafickému elementu CSS styl. V následujícím kódu na řádku 26 ja toto použitoo pro červené a silné (bold) zobrazení
+// Inline styly umožňují pomocí členské proměnné style (typ StringProperty) bez použití style sheetu definovat k danému
+// grafickému elementu CSS styl. V následujícím kódu na řádku 26 je toto použito pro červené a silné (bold) zobrazení
 // textu tlačítka.
 
 public class CInlineStyles extends Application {

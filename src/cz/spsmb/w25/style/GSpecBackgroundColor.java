@@ -20,7 +20,7 @@ public class GSpecBackgroundColor extends Application {
         Group root = new Group();
         Pane p = new Pane();
         p.setPrefSize(100, 100);
-        int mode = 2;
+        int mode = 3;
         switch (mode) {
             case 0:
                 p.setStyle(
@@ -47,8 +47,8 @@ public class GSpecBackgroundColor extends Application {
             default:
                 p.setStyle(
                         "-fx-background-color: red, green, blue;" +
-                        "-fx-background-insets: 5 5 5 5, 10 15 10 10, 15 20 15 15;" +
-                        "-fx-background-radius: 5 5 5 5, 0 0 10 10, 0 20 5 10;"
+                        "-fx-background-insets: 5, 10 15 10 10, 15 20 15 15;" +
+                        "-fx-background-radius: 5, 0 0 10 10, 0 20 5 10;"
                 );
                 break;
         }
