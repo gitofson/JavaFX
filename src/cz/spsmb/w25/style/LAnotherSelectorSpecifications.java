@@ -7,7 +7,7 @@ package cz.spsmb.w25.style;
 // Což vybere všechny uzly s closeButtonID a třídou stylu button
 
 // Univerzální selector - *
-// mo6nost vybrat jakýkoliv uzel
+// možnost vybrat jakýkoliv uzel
 // * {
 //      -fx-text-fill: blue;
 // }
