@@ -15,5 +15,21 @@ package cz.spsmb.w27.container;
 // uzel má tři velikosti: minimum size, maximum size a prefferedd size. Většina kontejnerů se pokouší dát
 // poduzlům jejich preffered size. Ta ale může být pozměněna na základě velikosti okna, layout policy kontejneru,
 // expanding/shrinking policy atd..
+
+// Přidání poduzlů (children) do Layout Pane
+// vytvoření dvou tlačítek
+// Button okBtn = new Button("OK");
+// Button cancelBtn = new Button("Cancel");
+
+// Vytvoření HBox s 2 tlačítky jako poduzly:
+// HBox hBox1 = new HBox(okBtn, cancelBtn);
+
+// Vytvoření HBox s 2 tlačítky a mezerou 20px mezi nimi
+// double hSpacing = 20;
+// HBox hBox2 = new HBox(hSpacing, okBtn, cancelBtn);
+
+// Vytvoření prázdného HBox a přidání 2 tlačítek později:
+// Hbox hBox3 = new HBox();
+// hBox3.getChildren().addAll(okBtn, cancelBtn);
 public class ALayoutPaneIntroduction {
 }
