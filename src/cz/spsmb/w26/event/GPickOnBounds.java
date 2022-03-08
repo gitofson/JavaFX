@@ -20,13 +20,6 @@ import javafx.stage.Stage;
 // nezávislá kliknutí. Metoda isStillSinceProcess() vrací true, právě když myš zůstane v této OS deklarované hysterezní
 // oblasti.
 
-// Klávesové modifikátory - Alt, Shift, Meta (jen na Mac), Caps Lock, Num Lock
-// boolean isAltDown()
-// boolean isControlDown()
-// boolean isMetaDown()
-// boolean isShiftDown()
-// boolean isShortcutDown()  - Ctrl klávesa ve win, Meta klávesa v Mac.
-
 // Vlastnost pickOnBounds
 // Ovládání toho, zda jsme klikli do ohraničení uzlu, nebo na jeho daný tvar je dán touto vlastností.
 // Pokud je true, události se generují, pokud klikneme do ohraničení. Jinak na tvar. Následující program to
