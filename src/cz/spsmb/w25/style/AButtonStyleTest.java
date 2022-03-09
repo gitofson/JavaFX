@@ -37,6 +37,7 @@ public class AButtonStyleTest extends Application {
 
         // Add a style sheet to the scene
         scene.getStylesheets().add("css/buttonstyles.css");
+        //scene.getStylesheets().add("css/button_hover.css");
 
         stage.setScene(scene);
         stage.setTitle("Styling Buttons");
