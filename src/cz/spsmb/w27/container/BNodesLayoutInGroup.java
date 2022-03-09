@@ -13,6 +13,9 @@ import javafx.stage.Stage;
 // - ve výchozím stavu  změní velikost přidávaných uzlů na jejich preffered size. Lze vypnout pomocí autoSizeChildren
 //   vlastnosti. Pokud to však uděláme většina uzlů bude po přidání neviditelná (nulová velikost).
 // Velikost Groupy se nedá nastavit a je dána cllective bounds všech podřazených uzlů.
+
+// Následující program ukazuje absolutní a relativní nastaveni pozic v Groupě:
+
 public class BNodesLayoutInGroup extends Application {
     public static void main(String[] args) {
         Application.launch(args);
