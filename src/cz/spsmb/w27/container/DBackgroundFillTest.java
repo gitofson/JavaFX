@@ -22,6 +22,12 @@ import javafx.stage.Stage;
 // Margin - mezera okolo okrajů
 // Region Insets -
 
+// Následující CSS vlastnosti definují pozadí třídy Region:
+// -fx-background-image: URL('cesta k obrazku');
+// -fx-background-color: lightgray, red;
+// -fx-background-insets: 0, 4;
+// -fx-background-radius: 4, 2;
+
 // Následující příklad ukazuje jak nastavit pozadí pro Pane (což je podtřída  třídy Region) za použití jak CSS
 // vlastností, tak i BackgroundObject
 
