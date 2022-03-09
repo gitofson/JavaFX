@@ -19,7 +19,7 @@ import javafx.stage.Stage;
 //                        řetězu dispečerů událostí (chain of event dispatchers). Každý z těchto dispečerů pak můče
 //                        událost obsloužit, či zkonzumovat.
 // EventType    třída   - instance této třídy reprezentuje typ. (mouse pressed, mouse released, mose moved)
-// EventHandler rozhraní- instance tohoto rozhraní repreyentuje buď tzv event handler, nebo tzv. event filter. Jeho
+// EventHandler rozhraní- instance tohoto rozhraní reprezentuje buď tzv. event handler, nebo tzv. event filter. Jeho
 //                        metoda handle() je volána, pokud událost nastane a handler,či filtr je k události registrován.
 
 public class AEventRegistration extends Application {
@@ -34,11 +34,18 @@ public class AEventRegistration extends Application {
 
         // Create a MouseEvent filter
         EventHandler<MouseEvent> mouseEventFilter =
-                e -> System.out.println("Mouse event filter has been called.");
+                e -> {
+                    System.out.println("Mouse event filter has been called.");
+                };
 
         // Create a MouseEvent handler
         EventHandler<MouseEvent> mouseEventHandler =
-                e -> System.out.println("Mouse event handler has been called.");
+                new EventHandler<MouseEvent>() {
+                    @Override
+                    public void handle(MouseEvent e) {
+                        System.out.println("Mouse event handler has been called.");
+                    }
+                };
 
         // Register the MouseEvent filter and handler to the Circle
         // for mouse-clicked events
@@ -46,6 +53,8 @@ public class AEventRegistration extends Application {
         circle.addEventHandler(MouseEvent.MOUSE_CLICKED, mouseEventHandler);
 
         HBox root = new HBox();
+        //root.setOnMouseClicked(e -> System.out.println("Mouse event handler has been called for root."));
+        //root.addEventFilter(MouseEvent.MOUSE_CLICKED, e -> System.out.println("Mouse event filter has been called for root."));
         root.getChildren().add(circle);
         Scene scene = new Scene(root);
         stage.setScene(scene);
