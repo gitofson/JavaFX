@@ -9,7 +9,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.stage.Stage;
 //HBox podporuje 2 typy omezení pro jednotlivé poduzly:
-// hgrow  - specifikuje, zda daný poduzel se má horizontílně rozšířit, kdzž uživatel změní čířku HBoxu
+// hgrow  - specifikuje, zda daný poduzel se má horizontílně rozšířit, když uživatel změní šířku HBoxu
 // margin - specifikuje mezeru mezi hrany poduzlů.
 // Statické metody třídy HBox setHgrow() a setMargin() slouží k nastavení těchto omezení. Výmaz na původní hodnoty
 // dostaneme statickou metodou clearConstraints()
