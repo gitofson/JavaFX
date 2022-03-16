@@ -7,7 +7,14 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 // AnchorPane umisťuje poduzly pomocí pevně zadaných kotev (anchors) čtyř stran. Bez specifikovaných kotev umisťuje
-// poduzly do pozice 0 0 a nepřináší tak žádné výhody, viz program níže.
+// poduzly do pozice 0 0 a nepřináší tak žádné výhody. Pro nastavení kotev se používají následující vlastnosti:
+// topAnchor        Double - vzdálenost mezi horní hranou oblasti obsahu AnchorPane a horní hranou poduzlu,
+// rightAnchor      Double - vzdálenost mezi pravou hranou oblasti obsahu AnchorPane a pravou hranou poduzlu,
+// bottomAnchor     Double - vzdálenost mezi spodní hranou oblasti obsahu AnchorPane a spodní hranou poduzlu,
+// leftAnchor       Double - vzdálenost mezi levou hranou oblasti obsahu AnchorPane a levou hranou poduzlu.
+
+// Následující program přidá dvě tlačítka do AnchorPane. První má nastavenou horní a levou kotvu, Druhé dolní a pravou.
+// Při změně velikosti okna kotvy demonstrují svou funkci.
 public class ZDAnchorPaneTest extends Application {
     public static void main(String[] args) {
         Application.launch(args);
