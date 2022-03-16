@@ -42,5 +42,6 @@ public class AButtonStyleTest extends Application {
         stage.setScene(scene);
         stage.setTitle("Styling Buttons");
         stage.show();
+
     }
 }
