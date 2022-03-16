@@ -9,7 +9,12 @@ import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 // TextFlow layout je navržen pro zobrazení většího textu. Ten je složen z více Text uzlů. TextFlow je spojí tak,
-// že se vše zobrazí jako jeden text. Příklad viz program níže:
+// že se vše zobrazí jako jeden text.
+// Zajímavé vlastnosti:
+// lineSpacing      DoubleProperty - specifikuje vertikální mezeru mezi řádky (výchozí hodnota je 0px).
+// textAlignment    ObjectProperty<TextAlignment> - zarovnání obsahu. Výčtový typ TextAlignment nabízí mnásledující
+//                                   možnosti: LEFT (výchozí), RIGHT, CENTER a JUSTIFY.
+// Příklad viz program níže:
 public class ZFTextFlowTest extends Application {
     public static void main(String[] args) {
         Application.launch(args);
