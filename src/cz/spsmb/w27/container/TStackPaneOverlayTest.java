@@ -7,6 +7,9 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+// Následující program demonstruje překrývací pravidla pro StackPane. Metoda createStackPane() vytvoří StackPane s
+// Rectangle a Text. Parametry jsou text pro Text uzel, neprůhlednost (opacity) pro Rectangle a hodnotu boolean,
+// která pokud je true, Rectangle je přidán do StackPane jako první.
 
 public class TStackPaneOverlayTest extends Application {
     public static void main(String[] args) {
