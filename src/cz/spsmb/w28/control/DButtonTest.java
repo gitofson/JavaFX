@@ -13,7 +13,11 @@ import javafx.stage.Stage;
 // - hybrid buttons - kombinace obou předchozích. Příklad SplitMenuButton.
 
 // Command button může být ve třech módech:
+// - normal button - ActionEvent je "odpálena" jakmile je tlačítko aktivováno
+// - default button- ActionEvent je "odpálena" po stisku Enter a žádný jiný poduzel ve scéně již stisk klávesy nezkonzumuje.
+// - cancel button- ActionEvent je "odpálena" po stisku Esc a žádný jiný poduzel ve scéně již stisk klávesy nezkonzumuje.
 
+//Následující program ukazuje použití těchto 3 módů.
 public class DButtonTest extends Application {
     Label msgLbl = new Label("Press Enter or Esc key to see the message");
 
