@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 // - default button- ActionEvent je "odpálena" po stisku Enter a žádný jiný poduzel ve scéně již stisk klávesy nezkonzumuje.
 // - cancel button- ActionEvent je "odpálena" po stisku Esc a žádný jiný poduzel ve scéně již stisk klávesy nezkonzumuje.
 
+// Ve výchozím stavu je Button normal button.
 //Následující program ukazuje použití těchto 3 módů.
 public class DButtonTest extends Application {
     Label msgLbl = new Label("Press Enter or Esc key to see the message");
