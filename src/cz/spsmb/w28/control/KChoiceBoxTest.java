@@ -5,6 +5,7 @@ import javafx.beans.value.ObservableValue;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.Separator;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 // V předchozích přikladech Toggle a Radio Buttons umožňovaly všechny volby zobrazit uživateli najednou. Což zabere
