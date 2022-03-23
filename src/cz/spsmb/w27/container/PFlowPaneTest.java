@@ -23,6 +23,7 @@ package cz.spsmb.w27.container;
 
 // Následující příklad ukazuje vytvoření horizontálního FlowPane a přidání 10 tlačítek.
 import javafx.application.Application;
+import javafx.geometry.Orientation;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.FlowPane;

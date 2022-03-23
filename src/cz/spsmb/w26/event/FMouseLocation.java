@@ -9,7 +9,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
-// Uzly zpravidla spouštějí uživatelské handlery před tím, než vykonajý výchozí akci. Např. pokud registrujeme pro uzel
+// Uzly zpravidla spouštějí uživatelské handlery před tím, než vykonají výchozí akci. Např. pokud registrujeme pro uzel
 // třídy TextField handler k události typu "key typed", který událost zkonzumuje, tak se nám napsaný znak v tomto uzlu
 // neobjeví.
 

@@ -30,6 +30,7 @@ public class KHBoxHGrow extends Application {
 
         HBox root = new HBox(10);
         root.getChildren().addAll(nameLbl, nameFld, okBtn, cancelBtn);
+        //root.setMinHeight(50);
 
         // Let the TextField always grow horizontally
         HBox.setHgrow(nameFld, Priority.ALWAYS);

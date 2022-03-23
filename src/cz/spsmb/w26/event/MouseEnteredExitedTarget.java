@@ -57,8 +57,8 @@ public class MouseEnteredExitedTarget extends Application {
         circle.addEventHandler(MOUSE_EXITED_TARGET, circleTargetHandler);
 
         // Add mouse-entered and mouse-exited event handlers to the Circle
-        circle.addEventHandler(MouseEvent.MOUSE_ENTERED, circleHandler);
-        circle.addEventHandler(MouseEvent.MOUSE_EXITED, circleHandler);
+        //circle.addEventHandler(MouseEvent.MOUSE_ENTERED, circleHandler);
+        //circle.addEventHandler(MouseEvent.MOUSE_EXITED, circleHandler);
 
         Scene scene = new Scene(root);
         stage.setScene(scene);

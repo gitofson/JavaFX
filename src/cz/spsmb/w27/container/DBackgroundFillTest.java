@@ -45,12 +45,13 @@ public class DBackgroundFillTest extends Application {
         p1.setLayoutX(10);
         p1.setLayoutY(10);
 
-        // Place p2 20px right to p1
-        p2.layoutYProperty().bind(p1.layoutYProperty());
-        p2.layoutXProperty().bind(p1.layoutXProperty().add(p1.widthProperty()).add(20));
+
 
         Pane root = new Pane(p1, p2);
         root.setPrefSize(240, 70);
+        // Place p2 20px right to p1
+        p2.layoutYProperty().bind(p1.layoutYProperty());
+        p2.layoutXProperty().bind(root.widthProperty().subtract(p1.layoutXProperty().add(p1.widthProperty()).add(20)));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Setting Background Fills for a Region");

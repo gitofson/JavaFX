@@ -17,6 +17,7 @@ public class ZEAnchorPaneStretching extends Application {
     public void start(Stage stage) {
         Button leftRight = new Button("A button");
         AnchorPane.setTopAnchor(leftRight, 10.0);
+        AnchorPane.setBottomAnchor(leftRight, 10.0);
         AnchorPane.setLeftAnchor(leftRight, 10.0);
         AnchorPane.setRightAnchor(leftRight, 10.0);
 

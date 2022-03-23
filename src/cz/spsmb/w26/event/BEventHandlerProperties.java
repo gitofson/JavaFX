@@ -8,7 +8,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
-// Třídy Node, Scene a Window obsahujívlastnosti události k uložení "event handlerů" ´vybraných typů. Jsou pojmenovány
+// Třídy Node, Scene a Window obsahují vlastnosti události k uložení "event handlerů" ´vybraných typů. Jsou pojmenovány
 // onXXX. Např. onMouseClicked, onKeyTyped. Sice to kód yjednodušuje, ale platí následující omezení:
 //  - podporují pouze handlery a ne filtry
 //  - je možné pro uzel přidat jen jednu událost

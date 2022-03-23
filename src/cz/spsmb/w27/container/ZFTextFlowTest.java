@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 // že se vše zobrazí jako jeden text.
 // Zajímavé vlastnosti:
 // lineSpacing      DoubleProperty - specifikuje vertikální mezeru mezi řádky (výchozí hodnota je 0px).
-// textAlignment    ObjectProperty<TextAlignment> - zarovnání obsahu. Výčtový typ TextAlignment nabízí mnásledující
+// textAlignment    ObjectProperty<TextAlignment> - zarovnání obsahu. Výčtový typ TextAlignment nabízí následující
 //                                   možnosti: LEFT (výchozí), RIGHT, CENTER a JUSTIFY.
 // Příklad viz program níže:
 public class ZFTextFlowTest extends Application {

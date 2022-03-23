@@ -16,7 +16,7 @@ package cz.spsmb.w27.container;
 // poduzlům jejich preffered size. Ta ale může být pozměněna na základě velikosti okna, layout policy kontejneru,
 // expanding/shrinking policy atd..
 
-// Přidání poduzlů (children) do Layout Pane
+// Přidání poduzlů (children) do LayoutPane
 // vytvoření dvou tlačítek
 // Button okBtn = new Button("OK");
 // Button cancelBtn = new Button("Cancel");

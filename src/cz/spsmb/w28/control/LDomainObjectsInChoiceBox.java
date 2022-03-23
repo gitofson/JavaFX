@@ -10,6 +10,8 @@ import javafx.scene.control.Separator;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
+import java.util.function.Consumer;
+
 //--module-path "C:\Users\stemb\IdeaProjects\javafx-sdk-17.0.2\lib" --add-modules javafx.controls,javafx.fxml
 
 // V ChoiceBoxu nemusí být nutně jen položky typu String. Lze použít jakýkoliv objekt. ChoiceBox volá metodu toString()
@@ -22,7 +24,7 @@ public class LDomainObjectsInChoiceBox extends Application {
     public void start(Stage stage) throws Exception {
         ChoiceBox<Person> persons = new ChoiceBox<>();
         //Nastavení konvertoru pro konverzi objektu Person na String
-        //persons.setConverter(new PersonStringConverter());
+        persons.setConverter(new PersonStringConverter());
 
         persons.getItems().addAll(new Person("John", "Jacobs", null),
                                   new Person("Donna", "Duncan", null),

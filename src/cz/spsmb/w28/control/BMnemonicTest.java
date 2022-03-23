@@ -56,7 +56,9 @@ public class BMnemonicTest extends Application {
         Label lbl = new Label("Press Alt + 1 or Alt + 2");
 
         // Use Alt + 1 as the mnemonic for Button 1
-        Button btn1 = new Button("Button _1");
+        Button btn1 = new Button();
+        btn1.setMnemonicParsing(true);
+        btn1.setText("Button _1");
         btn1.setOnAction(e -> lbl.setText("Button 1 clicked!"));
 
         // Use Alt + 2 as the mnemonic key for Button 2

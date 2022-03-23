@@ -2,6 +2,7 @@ package cz.spsmb.w28.control;
 
 import javafx.application.Application;
 import javafx.geometry.Pos;
+import javafx.geometry.Side;
 import javafx.scene.Scene;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
@@ -39,11 +40,12 @@ public class FMenuButtonTest extends Application {
 
         // Add menu items to the MenuButton
         MenuButton links = new MenuButton("Visit");
+        links.setPopupSide(Side.LEFT);
         links.getItems().addAll(jdojo, yahoo, google);
 
         BorderPane root = new BorderPane();
         root.setTop(links);
-        BorderPane.setAlignment(links, Pos.TOP_RIGHT);
+        BorderPane.setAlignment(links, Pos.CENTER);
         root.setCenter(webview);
 
         Scene scene = new Scene(root);

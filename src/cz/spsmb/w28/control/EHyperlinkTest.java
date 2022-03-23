@@ -12,6 +12,8 @@ import javafx.stage.Stage;
 // po vystřelení události ActionEvent.
 
 // Následující program zobrazí v JavaFX prohlížeči WebView odkaz z daného Hyperlinku.
+
+// --module-path "Y:\stemberk\verejne_zaci\javafx-sdk-17.0.1\lib" --add-modules javafx.controls,javafx.fxml,javafx.web
 public class EHyperlinkTest extends Application {
     private WebView webview;
 
