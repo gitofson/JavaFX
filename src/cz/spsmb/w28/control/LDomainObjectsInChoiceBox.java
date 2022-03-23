@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 
 // V ChoiceBoxu nemusí být nutně jen položky typu String. Lze použít jakýkoliv objekt. ChoiceBox volá metodu toString()
 // každé položky a zobrazí ji v pop-up menu. Třída
-// cz.spsmb.w28.PersonStringConverter disponuje matodami toString() a fromString(String in). Více v příkladu, kde jsou
+// cz.spsmb.w28.PersonStringConverter disponuje metodami toString() a fromString(String in). Více v příkladu, kde jsou
 // na ukázku přidány i styly.
 
 public class LDomainObjectsInChoiceBox extends Application {
