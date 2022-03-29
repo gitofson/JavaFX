@@ -1,0 +1,16 @@
+/* ListCell, který ukazuje vybrané položky v needitovatelném ComboBoxu*/
+.combo-box .list-cell {
+        -fx-background-color: yellow;
+}
+/* ListCell, který ukazuje vybrané položky v editovatelném ComboBoxu*/
+.combo-box .text-input {
+        -fx-background-color: yellow;
+}
+/* Stylování arrow button oblasti*/
+.combo-box .arrow-button {
+        -fx-background-color: lightgray;
+}
+/* Set the text color in the popup list for ComboBox to blue */
+.combo-box-poopup .list-view .list-cell {
+        -fx-text-fill: blue;
+}
