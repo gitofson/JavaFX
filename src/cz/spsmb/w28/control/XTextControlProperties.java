@@ -6,7 +6,16 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
-
+// Třída TextInputControl obsahuje vlastnosti a metody, které patří ke všem typům ovládacích prvků s textovým vstupem:
+// anchor           ReadOnlyIntegerProperty         kotva výběru textu,
+// caretPosition    ReadOnlyIntegerProperty
+// editable         BooleanProperty
+// font             ObjectProperty<Font>
+// length           ReadOnlyIntegerProperty         počet znaků v ovl. prvku
+// promptText       StringProperty
+// selectedText     ReadOnlyIntegerProperty
+// selection        ReadOnlyIntegerProperty<IndexRange>
+// text             StringProperty
 public class XTextControlProperties extends Application {
     public static void main(String[] args) {
         Application.launch(args);
