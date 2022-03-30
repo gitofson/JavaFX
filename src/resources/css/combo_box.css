@@ -8,7 +8,7 @@
 }
 /* Stylování arrow button oblasti*/
 .combo-box .arrow-button {
-        -fx-background-color: lightgray;
+        -fx-background-color: black;
 }
 /* Set the text color in the popup list for ComboBox to blue */
 .combo-box-poopup .list-view .list-cell {

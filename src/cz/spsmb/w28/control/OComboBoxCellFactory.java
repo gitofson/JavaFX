@@ -45,6 +45,7 @@ public class OComboBoxCellFactory extends Application {
                 "-fx-border-color: blue;");
 
         Scene scene = new Scene(root);
+        scene.getStylesheets().add("css/combo_box.css");
         stage.setScene(scene);
         stage.setTitle("Using CellFactory in ComboBox");
         stage.show();
