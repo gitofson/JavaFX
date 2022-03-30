@@ -9,7 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 // Předchozí problém viditelnosti jen jedné instance položky typu Node je možné řešit pomocí tzv. "cell factory"
-// ComboBox obsahuje vlastnost cellFacttory, která je deklarována následovně:
+// ComboBox obsahuje vlastnost cellFactory, která je deklarována následovně:
 // public ObjectProperty<Callback<ListView<T>, ListCell<T>>> cellFactory;
 // Rozhraní java.util.Callback obsahuje metodu call(), která bere argument typu P a vrací objekt typu R:
 // public interface Callback<P,R> {

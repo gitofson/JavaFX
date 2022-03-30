@@ -22,7 +22,23 @@ import javafx.stage.Stage;
 // ListView disponuje vlastností placeholder, kerá odkazuje na referenci uzlu. Pokud je vlastnost items empty, nebo null,
 // pak se placeholder uzel zobrazí v oblasti seznamu ListView.
 
-// ListView nabízí podporu skrolování
+// ListView nabízí podporu skrolování. ScrollToEvent je vysttřelena buď metodouu scrollTo, nebo skrolováním uživatelem.
+
+// Orientace ListView může být horizontální, či vertikální:
+// seasons.setOrientation(Orientation.HORIZONTAL)
+
+// ListView obsahuje tzv. model výběru (selection model), který uchovává stav položek. Vlastnost selectionModel
+// drží referenci na model výběru. Ve výchozím stavu jde o instanci třídy MultipleSelectionModel. Pokud bychom vhtěli
+// přepnout do jdenoduchého modelu výběru, uděláme to takto:
+// seasons.getSelectionModel().setSelectionMode(SelectionMode.SINGLE)
+
+// Třída MultipleSelectionModel dědí z SelectionModel, která obsahuje vlastnosti selectedIndex a selectedItem. Navíc
+// přidává metodu getSelectedIndicies(), která vrací read-onlu ObservableList<Integer> obsahující  indicie vybraných
+// položek. Pro detekci změny je možné přidat ChangeListener na vlastnost selectedIndex, nebo ListChangeListener na
+// ObselrvableList, který vrací metoda getSelectedInicies().
+
+// Následující program ukazuje, jek používat model výběru, jak provést výběr pomocí API a  jak poslouchat události změn
+// výběru
 public class PListViewSelectionModel extends Application {
     private ListView<String> seasons;
     private final Label selectedItemsLbl = new Label("[None]");
