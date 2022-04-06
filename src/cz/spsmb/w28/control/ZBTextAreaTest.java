@@ -29,8 +29,8 @@ public class ZBTextAreaTest extends Application {
 
         TextArea poem = new TextArea();
         poem.setPromptText("Your poem goes here");
-        poem.setPrefColumnCount(20);
-        poem.setPrefRowCount(10);
+        poem.setPrefColumnCount(30);
+        poem.setPrefRowCount(5);
         poem.appendText("I told her this: her laughter light\n" +
                 "Is ringing in my ears:\n" +
                 "And when I think upon that night\n" +

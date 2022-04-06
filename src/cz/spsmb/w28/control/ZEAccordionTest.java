@@ -4,9 +4,10 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 // Accordion zobrazuje skupinu TitledPane, kde pouze jeden z nich je v expanded stavu. Vlastnost expandedPane uchovává
-// index TotledPane, který je expanded. Má hodnotu null, pokud jsou všechny TitledPane ve stavu collapsed.
+// index TitledPane, který je expanded. Má hodnotu null, pokud jsou všechny TitledPane ve stavu collapsed.
 public class ZEAccordionTest extends Application {
     public static void main(String[] args) {
         Application.launch(args);
@@ -18,8 +19,8 @@ public class ZEAccordionTest extends Application {
         TitledPane addressPane = this.getAddressPane();
         TitledPane phonePane = this.getPhonePane();
 
-        Accordion root = new Accordion();
-        root.getPanes().addAll(generalPane, addressPane, phonePane);
+        Accordion root = new Accordion(generalPane, addressPane, phonePane);
+        //root.getPanes().addAll(generalPane, addressPane, phonePane);
         root.setExpandedPane(generalPane);
         root.setStyle("-fx-padding: 10;" +
                 "-fx-border-style: solid inside;" +
@@ -29,6 +30,7 @@ public class ZEAccordionTest extends Application {
                 "-fx-border-color: blue;");
 
         Scene scene = new Scene(root);
+        scene.getStylesheets().addAll("css/accordion.css");
         stage.setScene(scene);
         stage.setTitle("Using Accordion Controls");
         stage.show();

@@ -3,5 +3,5 @@
     -fx-background-insets: 1;
 }
 .accordion > .first-titled-pane > .title {
-    -fx-backgound-color: derive(red, 80%)
+    -fx-background-color: derive(red, 80%);
 }

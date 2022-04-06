@@ -47,6 +47,7 @@ public class ZDTitledPaneTest extends Application {
         TitledPane infoPane = new TitledPane();
         infoPane.setText("Personal Info");
         infoPane.setContent(grid);
+        infoPane.setAnimated(false);
 
         String imageStr = "resources/picture/privacy_icon.png";
         Image img = new Image(imageStr);
