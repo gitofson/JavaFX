@@ -1,0 +1,15 @@
+.pagination {
+        -fx-page-inforrmation-visible: false;
+}
+
+.pagination > .page {
+        -fx-background-color: lightgray;
+}
+
+.pagination > .pagination-control > .control-box {
+        -fx-padding: 2;
+            -fx-border-style: dashed;
+            -fx-border-width: 1;
+            -fx-border-radius: 5;
+            -fx-border-color: blue;
+}

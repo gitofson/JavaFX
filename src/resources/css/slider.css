@@ -1,0 +1,25 @@
+.slider > .axis {
+        -fx-tick-label-fill: blue;
+        -fx-tick-length: 15px;
+        -fx-minor-tick-length: 5px;
+}
+
+.slider > .axis > .axis-tick-mark {
+        -fx-stroke: red;
+}
+
+.slider > .axis > .axis-mirror-tick-mark {
+        -fx-stroke: green;
+}
+
+.slider > .track {
+        -fx-background-color:red;
+}
+
+.slider > .thumb {
+        -fx-background-radius: 0;
+}
+
+.slider > .thumb {
+        -fx-background-image: url("thumb.jpg");
+}
