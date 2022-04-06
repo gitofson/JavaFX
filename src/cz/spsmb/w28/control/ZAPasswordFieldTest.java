@@ -9,8 +9,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.layout.HBox;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
-
-public class ZPasswordFieldTest extends Application {
+// Password překrývá metody cut() a copy()
+public class ZAPasswordFieldTest extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         PasswordField pf = new PasswordField();
