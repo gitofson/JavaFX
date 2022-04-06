@@ -6,7 +6,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Pagination;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-// Třída Pajination se používá pro zobrazení velkého jednoduchého obsahu tak, že se rozdělí do více stránek.
+// Třída Pagination se používá pro zobrazení velkého jednoduchého obsahu tak, že se rozdělí do více stránek.
 // Obsahuje 2 oblasti:
 // oblast obsahu (content area)         - zobrazí obsah vybrané stránky
 // navigační oblast (navigation area)   - zobrazuje části, které umožňují navigaci z jedné stránky na jinou.
@@ -38,6 +38,7 @@ public class ZFPaginationTest extends Application {
                 "-fx-border-color: blue;");
 
         Scene scene = new Scene(root);
+        scene.getStylesheets().addAll("css/pagination.css");
         stage.setScene(scene);
         stage.setTitle("Using Pagination Controls");
         stage.show();

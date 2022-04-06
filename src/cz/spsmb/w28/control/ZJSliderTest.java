@@ -54,6 +54,7 @@ public class ZJSliderTest extends Application {
                 "-fx-border-color: blue;");
 
         Scene scene = new Scene(root);
+        scene.getStylesheets().addAll("css/slider.css");
         stage.setScene(scene);
         stage.setTitle("Using Slider Controls");
         stage.show();

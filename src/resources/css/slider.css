@@ -8,7 +8,7 @@
         -fx-stroke: red;
 }
 
-.slider > .axis > .axis-mirror-tick-mark {
+.slider > .axis > .axis-minor-tick-mark {
         -fx-stroke: green;
 }
 
