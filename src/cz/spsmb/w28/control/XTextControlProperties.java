@@ -16,6 +16,35 @@ import javafx.stage.Stage;
 // selectedText     ReadOnlyIntegerProperty
 // selection        ReadOnlyIntegerProperty<IndexRange>
 // text             StringProperty
+
+// Metody týkající se výběru textu:
+// selectAll()
+// deselect()
+// selectRange(int anchor, int caretPosition)
+// selectHome()
+// selectEnd()
+// extendSelection(int pos)
+// selectBackward()
+// select Forward()
+// selectPreviousWord()
+// select EndOfNextWord()
+// selectNextWord()
+// selectPositionCaret()
+// replaceSelection()
+
+// Modifikace obsahu:
+// setText(String text)
+// clear()
+// insertText(int index, String text)
+// appendText(String text)
+// deleteText(IndexRange ir)
+// deleteNextChar()
+// deletePreviousChar()
+
+//Kopírování přes schránku:
+// cut()
+// copy()
+// paste()
 public class XTextControlProperties extends Application {
     public static void main(String[] args) {
         Application.launch(args);
