@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 // text
 // graphics
 // closable
-// content
+// content      - obsah tabu, typ Node. Pokud je daný tab vybrán, uzel se zobrazí.
 
 public class ZOTabTest extends Application {
     public static void main(String[] args) {
