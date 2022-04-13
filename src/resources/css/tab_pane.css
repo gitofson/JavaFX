@@ -1,0 +1,24 @@
+/* removes the background color for the header area when the tabPane is in  the floating mode*/
+.tab-pane > .tab-header-area > .tab-header-background {
+        -fx-background-color: null;
+}
+
+/* shows the text of the selected tab in boldface */
+.tab-pane > .tab-header-area > .headers-region > .tab:selected > .tab-container > .tab-label {
+        -fx-font-weight: bold;
+}
+
+/* this shows Tabs in TabPane in blue background with 10pt white title text*/
+.tab-pane > .tab-header-area > .headers-region > .tab {
+        -fx-background-color: blue;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {
+        -fx-text-fill: white;
+        -fx-font-size: 10pt;
+}
+/* Use the floating style-class for the TabPane when styling it for the floating mode. The following style
+ sets the border color to blue in floating mode*/
+.tab-pane.floating > .tab-content-area  {
+        -fx-background-color: blue;
+}

@@ -17,6 +17,15 @@ import javafx.stage.Stage;
 //      ALL_TABS        - close tlačítko na všech tabech,
 //      SELECTED_TAB    - close tlačítka na vybraném tabu,
 //      UNAVAILABLE     - close tlačítko není zobrazeno.
+
+// Další vlastnosti:
+// side           - pozice Tabů v TabPane. Možnosti: TOP (default), RIGHT, BOTTOM, LEFT
+// rotateGraphics - boolean, smysl pouze pro hodnoty vlastnosti side LEFT, nebo RIGHT
+
+// TabPane může být ve dvou módech:
+// recessed     - výchozí mód, taby vypadají připevněně,
+// floating     - taby vypadají plovoucí. Zapnutí plovoucího módu:
+// tabPane.getStyleClass().add(TabPane.STYLE_CLASS_FLOATING)
 public class ZQTabClosingTest extends Application {
     GeneralTab generalTab = new GeneralTab("General", null);
     AddressTab addressTab = new AddressTab("Address", null);
