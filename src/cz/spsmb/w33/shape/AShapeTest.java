@@ -8,7 +8,7 @@ import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 // JavaFX disponuje uzly reprezentující různé typy tvarů (shape). Ty jsou obsaženy v balíčku javafx.scene.shape.
 // Vlastnosti:
-// size     - obecný název. Ve skutečnosti používáme width, height pro obdelník (rectangle), radiue pro kružnici (circle),
+// size     - obecný název. Ve skutečnosti používáme width, height pro obdelník (rectangle), radius pro kružnici (circle),
 // position - obecný název. Např. x, y definují levý horní roh obdelníka, centerX, centerY zas střed kružnice,
 // fill     - barva, která se použije k výplni tvaru. Výchozí hodnota je Color.BLACK,
 // stroke   - barva obrysu, výchozí null. Výjimka je pro Line, Polyline a Path, které mají výchozí Color.BLACK,

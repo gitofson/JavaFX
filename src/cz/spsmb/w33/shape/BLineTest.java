@@ -6,7 +6,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.stage.Stage;
-// Třída line obsahuje 4 vlastnosti typu double s výchozími hodnotami 0:
+// Třída Line obsahuje 4 vlastnosti typu double s výchozími hodnotami 0:
 // startX
 // startY
 // endX

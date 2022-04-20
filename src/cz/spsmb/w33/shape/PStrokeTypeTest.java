@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 // Třída Shape obsahuje několik vlastností, které definují vzhled obrysové čáry (štětce):
 // stroke           - barva štětce,
 // strokeWidth      - šířka obrysové čáry,
-// strokeType       - může být CENTERED, INSIDE, nebo OUTSIDE,
+// strokeType       - může být CENTERED (default), INSIDE, nebo OUTSIDE,
 // strokeLineCap    - může být:
 //                      - BUTT  (default) - žádná dekorace konců podobrysů,
 //                      - SQUARE - rozšíření konců podobrysů o polovičku strokeWidth,

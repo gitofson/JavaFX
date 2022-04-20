@@ -27,6 +27,7 @@ public class OCombiningShapesTest extends Application {
         union.setFill(Color.LIGHTGRAY);
 
         Shape intersection = Shape.intersect(c1, c2);
+        //intersection.setSmooth(false);
         intersection.setStroke(Color.BLACK);
         intersection.setFill(Color.LIGHTGRAY);
 

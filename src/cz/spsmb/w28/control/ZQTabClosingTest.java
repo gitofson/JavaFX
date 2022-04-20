@@ -43,6 +43,7 @@ public class ZQTabClosingTest extends Application {
     public void start(Stage stage) {
         // Add Tabs to the TabPane
         tabPane.getTabs().addAll(generalTab, addressTab);
+        //tabPane.getStyleClass().add(TabPane.STYLE_CLASS_FLOATING);
 
         // Set a tab close request event handler for tabs
         generalTab.setOnCloseRequest(this::tabClosingRequested);
@@ -88,6 +89,7 @@ public class ZQTabClosingTest extends Application {
                 "-fx-border-color: blue;");
 
         Scene scene = new Scene(root);
+        scene.getStylesheets().addAll("css/tab_pane.css");
         stage.setScene(scene);
         stage.setTitle("Closing Tabs");
         stage.show();

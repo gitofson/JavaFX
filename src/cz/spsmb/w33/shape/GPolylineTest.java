@@ -17,9 +17,10 @@ public class GPolylineTest extends Application {
         Polyline triangle1 = new Polyline();
         triangle1.getPoints().addAll(50.0, 0.0,
                 0.0, 50.0,
-                100.0, 50.0,
-                50.0, 0.0);
-        triangle1.setFill(Color.WHITE);
+                100.0, 50.0
+        //        50.0, 0.0
+        );
+        triangle1.setFill(Color.CORAL);
         triangle1.setStroke(Color.RED);
 
         // Create an open parallelogram
@@ -36,9 +37,10 @@ public class GPolylineTest extends Application {
                 120.0, 40.0,
                 100.0, 60.0,
                 80.0, 40.0,
-                80.0, 20.0,
-                100.0, 0.0);
-        hexagon.setFill(Color.WHITE);
+                80.0, 20.0
+        //        100.0, 0.0
+        );
+        hexagon.setFill(Color.YELLOWGREEN);
         hexagon.setStroke(Color.BLACK);
 
         HBox root = new HBox(triangle1, parallelogram, hexagon);

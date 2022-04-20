@@ -15,7 +15,7 @@ public class ZTDirectoryChooser extends Application {
         dirDialog.setTitle("Select destination directory");
         dirDialog.setInitialDirectory(new File("c:\\"));
         File dir = dirDialog.showDialog(null);
-        if(dir == null) {
+        if(dir != null) {
             System.out.println("Selected directory> " + dir);
         } else {
             System.out.println("No directory was selected");
