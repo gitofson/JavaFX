@@ -1,0 +1,14 @@
+.chart {
+    -fx-clockwise: false;
+    -fx-pie-label-visible: true;
+    -fx-label-line-length: 10;
+    -fx-start-angle: 90;
+}
+.chart-pie {
+    -fx-border-color: white;
+    -fx-background-insets: 2;
+}
+/* možnost specifikace výchozí barvy (těch je celkem 8, pak se opakují), nebo 8. a další barvy:*/
+.chart-pie.default-color0 {-fx-pie-color: red; }
+.chart-pie.default-color8 {-fx-pie-color: gold; }
+.chart-pie.default-color9 {-fx-pie-color: khaki; }
