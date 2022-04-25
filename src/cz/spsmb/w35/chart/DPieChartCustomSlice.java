@@ -8,7 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.chart.PieChart;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-
+// Také je možné přidat pozadí s obrázkem do jednotlivých částí koláče.
 public class DPieChartCustomSlice extends Application {
     public static void main(String[] args) {
         Application.launch(args);
