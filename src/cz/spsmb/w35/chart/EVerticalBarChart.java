@@ -27,6 +27,11 @@ import javafx.stage.Stage;
 // data             - datová reprezentace, typ ObservableList<XYChart.Data<X,Y>>,
 // chart            - read-only reference na graf, ke kterému tyto data patří,
 // node             - Node reference na uzel, který tuto řadu zobrazuje.
+
+// Instance třídy BarChart reprezentuje sloupcový graf. Ve sloupcovém grafu musí být jedna osa typu CategoryAxis a druhá
+// typu ValueAxis/NumberAxis. BarChart obsahuje následující vlastnosti:
+// barGap       - mezera mezi dvěma sloupci, default  4px,
+// categoryGap  - mezera mezi dvěma sloupci v rámci kategorie, default  10px.
 public class EVerticalBarChart extends Application {
     public static void main(String[] args) {
         Application.launch(args);
