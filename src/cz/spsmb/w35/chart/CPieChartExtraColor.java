@@ -9,8 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.chart.PieChart;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-// Standartně PieChart používá 8 různých barev. K jejich určení se použije předpis (dataIndex & 8). Metoda
-// setSeriesColorStyles() nakonec přidá jména tříd stylů tak, aby chich v tomto případě bylo 10.
+// Standartně PieChart používá 8 různých barev. K jejich určení se použije předpis (dataIndex % 8). Metoda
+// setSeriesColorStyles() nakonec přidá jména tříd stylů tak, aby jich v tomto případě bylo 10.
 public class CPieChartExtraColor extends Application {
     public static void main(String[] args) {
         Application.launch(args);

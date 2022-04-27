@@ -13,6 +13,7 @@ public class PieChartUtil {
 		data.add(new PieChart.Data("Brazil", 172));
 		data.add(new PieChart.Data("UK", 59));
 		data.add(new PieChart.Data("USA", 285));
+		data.add(new PieChart.Data("Czech Republic", 11));
 		return data;
 	}
 }

@@ -19,7 +19,7 @@ import javafx.stage.Stage;
 // title        - specifikuje titulek ke grafu,
 // titleSide    - výčtový typ výčtu Side. Možnosti: TOP (default), RIGHT, BOTTOM, LEFT,
 // legend       - specifikace legendy, reference na instanci typu Node,
-// titleSide    - pozice legendy, výčtový typ výčtu Side. Možnosti: TOP, RIGHT, BOTTOM (default), LEFT,
+// legendSide    - pozice legendy, výčtový typ výčtu Side. Možnosti: TOP, RIGHT, BOTTOM (default), LEFT,
 // animated     - true (default), pokud se mná provést nějaká animace při změně dat.
 
 // Třída PieChart pak přidává následující vlastnosti:
@@ -47,6 +47,7 @@ public class APieChartTest extends Application {
 
         StackPane root = new StackPane(chart);
         Scene scene = new Scene(root);
+        scene.getStylesheets().addAll("css/pie_chart.css");
 
         stage.setScene(scene);
         stage.setTitle("A Pie Chart");
