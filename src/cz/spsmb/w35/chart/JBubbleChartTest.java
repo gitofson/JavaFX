@@ -9,9 +9,9 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-// Bublinkový graf je podobný bodovému grafu, má ale přidanou možnost repreyentace tří hodnot v jedno modě. Je totiž
+// Bublinkový graf je podobný bodovému grafu, má ale přidanou možnost reprezentace tří hodnot v jedno modě. Je totiž
 // možné nastavit poloměr bublinek. Třída BubbleChart používá  vlastnost extraValue pro získání poloměru bubliny.
-// Bublinka je repreyentována elipsou, kde poloměry jsou v poměru měřítek os.
+// Bublinka je reprezentována elipsou, kde poloměry jsou v poměru měřítek os.
 public class JBubbleChartTest extends Application {
     public static void main(String[] args) {
         Application.launch(args);
@@ -53,8 +53,10 @@ public class JBubbleChartTest extends Application {
 
     private void setBubbleRadius(ObservableList<XYChart.Series<Number,Number>> chartData) {
         for(XYChart.Series<Number,Number> series: chartData) {
+            int i = 20;
             for(XYChart.Data<Number,Number> data : series.getData()) {
-                data.setExtraValue(20); // Bubble radius
+                data.setExtraValue(i); // Bubble radius
+                i+=3;
             }
         }
     }

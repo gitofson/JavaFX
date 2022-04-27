@@ -39,6 +39,7 @@ public class GStackedBarChart extends Application {
 
         StackPane root = new StackPane(chart);
         Scene scene = new Scene(root);
+        scene.getStylesheets().addAll("css/bar_chart.css");
         stage.setScene(scene);
         stage.setTitle("A Vertical Stacked Bar Chart");
         stage.show();

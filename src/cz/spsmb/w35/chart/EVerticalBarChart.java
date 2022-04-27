@@ -55,6 +55,7 @@ public class EVerticalBarChart extends Application {
 
         StackPane root = new StackPane(chart);
         Scene scene = new Scene(root);
+        scene.getStylesheets().addAll("css/bar_chart.css");
         stage.setScene(scene);
         stage.setTitle("A Vertical Bar Chart");
         stage.show();

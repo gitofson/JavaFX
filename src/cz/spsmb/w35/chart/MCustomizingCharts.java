@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 // horizontalZeroLineVisible        (default true)
 // verticalZeroLineVisible          (default true)
 
-// Formátování číselných repreyentací na osách:
+// Formátování číselných reprezentací na osách:
 // Třída ValueAxis obsahuje vlastnost
 // tickLabelFormatter typu StringFormatter, kde výchozí hodnota je NumberAxis.DefaultFormatter
 public class MCustomizingCharts extends Application {

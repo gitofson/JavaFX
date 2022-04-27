@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.chart.*;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-// V bodový graf (statter chart) je možné použít libovolný typ Axis pro osy x a y. Vlastnost autoRanging je nastacena
+// V bodový graf (statter chart) je možné použít libovolný typ Axis pro osy x a y. Vlastnost autoRanging je nastavena
 // na true jako výchozí.
 public class HScatterChartTest extends Application {
     public static void main(String[] args) {
