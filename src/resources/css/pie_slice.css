@@ -1,4 +1,3 @@
-// pie_slice.css
 /* Set a background image for pie slices */
 .chart-pie.data0 {-fx-background-image: url("china_flag.jpg");}
 .chart-pie.data1 {-fx-background-image: url("india_flag.jpg");}
