@@ -54,7 +54,7 @@ public class CPieChartExtraColor extends Application {
         ObservableList<PieChart.Data> chartData = chart.getData();
         int size = chartData.size();
         for (int i = 8; i < size; i++) {
-            String removedStyle = "default-color" + (i % 8);
+            String removedStyle = "default-color" + (i % 10);
             String addedStyle = "default-color" + (i % size);
 
             // Reset the pie slice colors
