@@ -1,0 +1,21 @@
+.chart {
+    -fx-create-symbols: false;
+}
+
+.chart-series-area-fill.default-color0 {
+    -fx-fill: rgba(0, 0 ,255, 0.20);
+}
+/* Data points symbols color */
+chart-area-symbol.default-color0 {
+    -fx-background-color: blue, white;
+}
+
+/* Series line segment color */
+chart-series-area-line.default-color0 {
+    -fx-stroke: blue;
+}
+
+/* Series legend symbol color*/
+.area-legend-symbol.default-color0 {
+    -fx-background-color: blue, white;
+}
