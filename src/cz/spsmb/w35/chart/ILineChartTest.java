@@ -4,12 +4,13 @@ import cz.spsmb.w35.XYChartDataUtil;
 import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.scene.Scene;
-import javafx.scene.chart.*;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-// V bodový graf (statter chart) je možné použít libovolný typ Axis pro osy x a y. Vlastnost autoRanging je nastacena
-// na true jako výchozí.
-public class HScatterChartTest extends Application {
+// Liniový graf si je možné představit jako bodový graf, kde jednotlivé body v rámci řady jsou spojeny rovnými čarami.
+public class ILineChartTest extends Application {
     public static void main(String[] args) {
         Application.launch(args);
     }
@@ -28,7 +29,7 @@ public class HScatterChartTest extends Application {
         NumberAxis yAxis = new NumberAxis();
         yAxis.setLabel("Population (in millions)");
 
-        ScatterChart<Number,Number> chart = new ScatterChart<>(xAxis, yAxis);
+        LineChart<Number,Number> chart = new LineChart<>(xAxis, yAxis);
         chart.setTitle("Population by Year and Country");
 
         // Set the data for the chart
@@ -39,7 +40,7 @@ public class HScatterChartTest extends Application {
         StackPane root = new StackPane(chart);
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("A Scatter Chart");
+        stage.setTitle("A Line Chart");
         stage.show();
     }
 }
