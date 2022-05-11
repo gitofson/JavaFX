@@ -2,7 +2,7 @@
 <?import cz.spsmb.w37.fxml.EItem?>
 <?import java.util.ArrayList?>
 <ArrayList>
-	<EItem name="Kishori" id="100"/>
+	<EItem name="Uzuka" id="100"/>
 	<EItem name="Ellen" id="200"/>
 	<EItem name="Kannan" id="300"/>
 </ArrayList>
