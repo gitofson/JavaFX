@@ -9,23 +9,19 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
-
+// Bez controleru to pravděpodobně již nefunguje
 public class BSayHelloFXML extends Application {
     public static void main(String[] args) {
         Application.launch(args);
     }
 
-    @FXML
-    private void buttonAction() {
-        // code to execute when button is fired
-    }
 
     @Override
     public void start(Stage stage) throws IOException {
         // Construct a URL for the FXML document
         URL fxmlUrl = this.getClass()
                 .getClassLoader()
-                .getResource("fxml/sayhello.fxml");
+                .getResource("resources/fxml/sayhello.fxml");
 
         // Load the FXML document
         VBox root = FXMLLoader.<VBox>load(fxmlUrl);
