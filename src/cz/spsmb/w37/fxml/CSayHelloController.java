@@ -1,0 +1,37 @@
+package cz.spsmb.w37.fxml;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class CSayHelloController {
+    // The refernce of msgLbl will be injected by the FXML loader
+    @FXML
+    private Label msgLbl;
+
+    // location and resources wil be automatically injected by the FXML laoder
+    @FXML
+    private URL location;
+
+    @FXML
+    private ResourceBundle resources;
+
+    // Add a public no-args construtcor explicitly just to
+    // emphasize that it is needed for a controller
+    public CSayHelloController() {
+    }
+
+    @FXML
+    private void initialize() {
+        System.out.println("Initializing SayHelloController...");
+        System.out.println("Location = " + location);
+        System.out.println("Resources = " + resources);
+    }
+
+    @FXML
+    private void sayHello() {
+        msgLbl.setText("Hello from FXML!");
+    }
+}
