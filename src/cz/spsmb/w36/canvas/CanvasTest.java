@@ -12,7 +12,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.nio.ByteBuffer;
-
+// Canvas - plátno, kde můžeme kreslit tvary, obrázky a texty pomocí příkazů.
 public class CanvasTest extends Application {
     private static final int RECT_WIDTH = 20;
     private static final int RECT_HEIGHT = 20;
@@ -23,7 +23,7 @@ public class CanvasTest extends Application {
 
     @Override
     public void start(Stage stage) {
-        Canvas canvas = new Canvas(400, 100);
+        Canvas canvas = new Canvas(400, 300);
         GraphicsContext gc = canvas.getGraphicsContext2D();
 
         // Set line width and fill color
@@ -43,6 +43,11 @@ public class CanvasTest extends Application {
         String imagePath = "picture/ksharan.jpg";
         Image image = new Image(imagePath);
         gc.drawImage(image, 130, 10, 60, 80);
+
+        //vykreslení svg:
+        gc.appendSVGPath("M0,38a38,38 0 0 1 0,-76a19,19 0 0 1 0,38a19,19 0 0 0 0,38");
+        gc.fill();
+        gc.stroke();
 
         // Write custom pixels to create a pattern
         writePixels(gc);

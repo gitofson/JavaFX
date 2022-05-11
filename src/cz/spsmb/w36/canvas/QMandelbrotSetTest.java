@@ -1,4 +1,4 @@
-package cz.spsmb.w33.shape;
+package cz.spsmb.w36.canvas;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
