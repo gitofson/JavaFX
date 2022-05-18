@@ -41,7 +41,6 @@ public class GTableViewAddDeleteRows extends Application {
 		                          PersonTableUtil.getFirstNameColumn(), 
 		                          PersonTableUtil.getLastNameColumn(), 
 		                          PersonTableUtil.getBirthDateColumn());
-		table.
 		GridPane newDataPane  = this.getNewPersonDataPane();
 		
 		Button restoreBtn = new Button("Restore Rows");
