@@ -43,7 +43,7 @@ public class DTableViewCellFactoryTest extends Application {
 							this.setGraphic(null);
 
 							if (!empty) {
-								String formattedDob = DateTimeFormatter.ofPattern("MM/dd/yyyy")
+								String formattedDob = DateTimeFormatter.ofPattern("dd.MM.yyyy")
 								.format(item);
 								this.setText(formattedDob);
 							}

@@ -18,3 +18,23 @@
         -fx-border-width: 0.25px;
         -fx-border-color: transparent gray gray transparent;
 }
+
+/* nezobrazování prázdných řádků */
+.table-row-cell:empty {
+        -fx-background-color: transparent;
+}
+
+.table-row-cell:empty .table-cell {
+        -fx-border-width: 0px;
+}
+
+/* červený a silný placeholder */
+.table-view .placeholder .label {
+        -fx-text-fill: red;
+        -fx-font-weight: bold;
+}
+
+/* set filer background to white*/
+.table-view .column-header-background .filler {
+        -fx-background-color: white;
+}

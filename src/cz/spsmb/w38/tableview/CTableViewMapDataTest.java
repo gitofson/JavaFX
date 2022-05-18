@@ -17,6 +17,8 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
+// Vhodné, pokud mám zdroj dat v asociativním poli, resp v mapě. Klíče jsou názvy sloupců,
+// hodnoty pak hodnotami jednotlivých buňěk v daném řádku.
 public class CTableViewMapDataTest extends Application {
 	private final String idColumnKey = "id";
 	private final String firstNameColumnKey = "firstName";

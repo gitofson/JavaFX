@@ -31,7 +31,7 @@ public class FCustomTableCellTest extends Application {
 		
 		// Set up teh Birth Date column to use DatePickerTableCell
 		TableColumn<Person, LocalDate> birthDateCol = PersonTableUtil.getBirthDateColumn();
-		StringConverter converter = new LocalDateStringConverter( FormatStyle.MEDIUM);
+		StringConverter converter = new LocalDateStringConverter( FormatStyle.LONG);
 		birthDateCol.setCellFactory(
 			DatePickerTableCell.<Person>forTableColumn(converter, false));
 

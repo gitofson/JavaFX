@@ -41,7 +41,7 @@ public class GTableViewAddDeleteRows extends Application {
 		                          PersonTableUtil.getFirstNameColumn(), 
 		                          PersonTableUtil.getLastNameColumn(), 
 		                          PersonTableUtil.getBirthDateColumn());
-	
+		table.
 		GridPane newDataPane  = this.getNewPersonDataPane();
 		
 		Button restoreBtn = new Button("Restore Rows");
@@ -60,6 +60,7 @@ public class GTableViewAddDeleteRows extends Application {
 		              "-fx-border-color: blue;");
 
 		Scene scene = new Scene(root);
+		scene.getStylesheets().add("css/tableview.css");
 		stage.setScene(scene);
 		stage.setTitle("Adding/Deleting Rows in a TableViews");
 		stage.show();	
