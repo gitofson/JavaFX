@@ -8,7 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-// Vytvoření jednoduchého TableView
+// Vytvoření jednoduchého TableView:
 @SuppressWarnings("unchecked")
 public class ASimplestTableView extends Application {
 	public static void main(String[] args) {
