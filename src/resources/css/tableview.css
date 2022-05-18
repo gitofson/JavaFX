@@ -1,0 +1,20 @@
+/* fonty buněk*/
+.table-row-cell {
+        -fx-font-size: 10pt;
+        -fx-font-family: Arial;
+}
+
+/* fonty pro headery */
+.table-view .column-header .label {
+        -fx-font-size: 10pt;
+        -fx-text-fill: blue;
+}
+
+.table-row-cell {
+        -fx-background-color: white;
+}
+
+.table-row-cell {
+        -fx-border-width: 0.25px;
+        -fx-border-color: transparent gray gray transparent;
+}
