@@ -2,6 +2,8 @@
 package cz.spsmb.w38.tableview;
 
 import cz.spsmb.w28.mvc.model.Person;
+import cz.spsmb.w38.DatePickerTableCell;
+import cz.spsmb.w38.PersonTableUtil;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
@@ -9,8 +11,10 @@ import javafx.scene.control.TableView;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import javafx.util.StringConverter;
+import javafx.util.converter.LocalDateStringConverter;
 
 import java.time.LocalDate;
+import java.time.format.FormatStyle;
 
 public class FCustomTableCellTest extends Application {
 	public static void main(String[] args) {
@@ -27,7 +31,7 @@ public class FCustomTableCellTest extends Application {
 		
 		// Set up teh Birth Date column to use DatePickerTableCell
 		TableColumn<Person, LocalDate> birthDateCol = PersonTableUtil.getBirthDateColumn();
-		StringConverter converter = new LocalDateStringConverter("MMMM dd, yyyy");
+		StringConverter converter = new LocalDateStringConverter( FormatStyle.MEDIUM);
 		birthDateCol.setCellFactory(
 			DatePickerTableCell.<Person>forTableColumn(converter, false));
 

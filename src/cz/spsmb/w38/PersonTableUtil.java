@@ -1,7 +1,7 @@
 // PersonTableUtil.java
 package cz.spsmb.w38;
 
-import com.jdojo.mvc.model.Person;
+import cz.spsmb.w28.mvc.model.Person;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableColumn;

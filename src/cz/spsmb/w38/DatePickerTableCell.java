@@ -8,6 +8,7 @@ import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.util.Callback;
 import javafx.util.StringConverter;
+import javafx.util.converter.LocalDateStringConverter;
 
 @SuppressWarnings("unchecked")
 public class DatePickerTableCell<S, T> extends TableCell<S, java.time.LocalDate> {

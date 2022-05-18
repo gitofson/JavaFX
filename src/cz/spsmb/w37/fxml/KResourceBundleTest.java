@@ -25,7 +25,7 @@ public class KResourceBundleTest extends Application {
 		                  .getResource("resources/fxml/greetings.fxml");
 
 		// Create a ResourceBundle to use in FXMLLoader
-		String resourcePath = "resourcebundles/greetings";
+		String resourcePath = "resources/resourcebundles/greetings";
 		ResourceBundle resourceBundle = ResourceBundle.getBundle(resourcePath);
 
 		// Load teh Label for default Locale
