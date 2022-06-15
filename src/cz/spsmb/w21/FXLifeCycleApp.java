@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 //3. start() metoda
 //4. stop() metoda - volána, když aplikace končí
 
-//Explocitní ukončení aplikace můžeme provést pomocí Platform.exit()
+//Explicitní ukončení aplikace můžeme provést pomocí Platform.exit()
 //JavaFX aplikace může být ukončena implicitně, pokud zavřeme poslední okno.
 // Tomuto se dá zabránit pomocí statické metody setImpicitExit(false). Default
 // je true.
