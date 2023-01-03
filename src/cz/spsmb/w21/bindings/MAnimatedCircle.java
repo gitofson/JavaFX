@@ -63,6 +63,12 @@ public class MAnimatedCircle extends Application {
             }
         }));
         */
+        /*
+        Final Timeline tm = new Timeline();
+        tm.add(new KeyFrame(Duration.millis(10000),
+        new KeyValue (button.translateXProperty(), 8)));
+        tm. setCycleCount(8);
+        */
         Timeline tl = new Timeline(new KeyFrame(Duration.millis(25), this::animationHandler));
         tl.setCycleCount(Animation.INDEFINITE);
         tl.play();
